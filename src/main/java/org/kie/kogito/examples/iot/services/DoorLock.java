@@ -5,10 +5,12 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class DoorLock {
     public boolean locked = false;
-    public void lock() {
+    public Object lock(Object o) {
         this.locked = true;
+        return null;
     }
-    public void unlock() {
+    public Object unlock(Object o) {
         this.locked = false;
+        return null;
     }
 }

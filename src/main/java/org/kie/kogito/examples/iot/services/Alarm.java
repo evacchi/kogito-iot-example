@@ -5,10 +5,12 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class Alarm {
     public boolean enabled = false;
-    public void enable() {
+    public Object enable(Object o) {
         this.enabled = true;
+        return null;
     }
-    public void disable() {
+    public Object disable(Object o) {
         this.enabled = false;
+        return null;
     }
 }

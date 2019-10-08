@@ -5,7 +5,8 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class Light {
     private double value = 1.0;
-    public void dim(double value) {
+    public Object dim(double value) {
         this.value = value;
+        return null;
     }
 }

@@ -5,10 +5,12 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class Fireplace {
     private boolean onFire;
-    public void startFire() {
+    public Object startFire(Object o) {
         this.onFire = true;
+        return null;
     }
-    public void stopFire() {
+    public Object stopFire(Object o) {
         this.onFire = false;
+        return null;
     }
 }
