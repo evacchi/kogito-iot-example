@@ -1,0 +1,7 @@
+package org.kie.kogito.examples.iot.rules;
+unit ComputeAC;
+
+rule dummyComputeAC when
+then
+end
+

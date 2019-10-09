@@ -1,0 +1,6 @@
+package org.kie.kogito.examples.iot.rules;
+unit AlertedSystem;
+
+rule dummyAlertedSystem when
+then
+end

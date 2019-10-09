@@ -1,0 +1,6 @@
+package org.kie.kogito.examples.iot.rules;
+unit DetectIntruder;
+
+rule dummyDetectIntruder when
+then
+end

@@ -42,6 +42,16 @@
       <version>${kogito.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>drools-canonical-model</artifactId>
+      <version>${kogito.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>drools-model-compiler</artifactId>
+      <version>${kogito.version}</version>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
     </dependency>
