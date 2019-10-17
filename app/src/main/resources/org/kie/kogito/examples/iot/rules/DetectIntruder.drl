@@ -2,5 +2,7 @@ package org.kie.kogito.examples.iot.rules;
 unit DetectIntruder;
 
 rule dummyDetectIntruder when
+    msg: /updates
 then
+    result.append("SITUATION_NORMAL");
 end
