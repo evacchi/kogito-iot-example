@@ -5,7 +5,7 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class DoorSensors {
     public Object getStatus(Object o) {
-        System.out.println("all ok");
+        System.out.println("Situation normal");
         return null;
     }
 }
