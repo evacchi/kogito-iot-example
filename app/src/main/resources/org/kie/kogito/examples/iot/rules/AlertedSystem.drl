@@ -11,8 +11,8 @@ then
 end
 
 rule alertedIntruderAtTheDoor when
-    /updates[ isAlerted() ]
+    msg: /updates[ isAlerted() ]
 then
-    System.out.println("situation still abnormal: intruder");
+    System.out.println("situation still abnormal: " + msg);
     result.append("INTRUDER_DETECTED");
 end

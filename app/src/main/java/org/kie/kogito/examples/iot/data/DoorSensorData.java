@@ -52,4 +52,16 @@ public class DoorSensorData {
     }
     
 
+
+    @Override
+    public String toString() {
+        return "{" +
+            " frontDoor='" + isFrontDoor() + "'" +
+            ", kitchenWindow='" + isKitchenWindow() + "'" +
+            ", bedRoomWindow='" + isBedRoomWindow() + "'" +
+            ", bathRoomWindow='" + isBathRoomWindow() + "'" +
+            ", livingRoomWindow='" + isLivingRoomWindow() + "'" +
+            "}";
+    }
+
 }

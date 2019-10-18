@@ -11,8 +11,8 @@ then
 end
 
 rule intruderAtTheDoor when
-    /updates[ isAlerted() ]
+    msg: /updates[ isAlerted() ]
 then
-    System.out.println("intruder detected");
+    System.out.println("intruder detected: " + msg);
     result.append("INTRUDER_DETECTED");
 end
