@@ -1,6 +1,6 @@
 package org.kie.kogito.examples.iot.data;
 
-public class DoorSensor {
+public class DoorSensorData {
     private final boolean frontDoor;
     private final boolean kitchenWindow;
     private final boolean bedRoomWindow;
@@ -8,7 +8,7 @@ public class DoorSensor {
     private final boolean livingRoomWindow;
 
 
-    public DoorSensor(boolean frontDoor, boolean kitchenWindow, boolean bedRoomWindow, boolean bathRoomWindow, boolean livingRoomWindow) {
+    public DoorSensorData(boolean frontDoor, boolean kitchenWindow, boolean bedRoomWindow, boolean bathRoomWindow, boolean livingRoomWindow) {
         this.frontDoor = frontDoor;
         this.kitchenWindow = kitchenWindow;
         this.bedRoomWindow = bedRoomWindow;
@@ -16,41 +16,24 @@ public class DoorSensor {
         this.livingRoomWindow = livingRoomWindow;
     }
 
-
-    public boolean getFrontDoor() {
-        return this.frontDoor;
+    public boolean isAlerted() {
+        return frontDoor || kitchenWindow || bedRoomWindow || bathRoomWindow || livingRoomWindow;
     }
 
     public boolean isFrontDoor() {
         return this.frontDoor;
     }
 
-    public boolean getKitchenWindow() {
-        return this.kitchenWindow;
-    }
-
     public boolean isKitchenWindow() {
         return this.kitchenWindow;
-    }
-
-    public boolean getBedRoomWindow() {
-        return this.bedRoomWindow;
     }
 
     public boolean isBedRoomWindow() {
         return this.bedRoomWindow;
     }
 
-    public boolean getBathRoomWindow() {
-        return this.bathRoomWindow;
-    }
-
     public boolean isBathRoomWindow() {
         return this.bathRoomWindow;
-    }
-
-    public boolean getLivingRoomWindow() {
-        return this.livingRoomWindow;
     }
 
     public boolean isLivingRoomWindow() {

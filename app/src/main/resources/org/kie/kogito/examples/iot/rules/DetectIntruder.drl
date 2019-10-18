@@ -1,8 +1,16 @@
 package org.kie.kogito.examples.iot.rules;
 unit DetectIntruder;
 
-rule dummyDetectIntruder when
-    msg: /updates
+import org.kie.kogito.examples.iot.data.DoorSensorData;
+
+rule noIntruder when
+    /updates[ !isAlerted() ]
 then
     result.append("SITUATION_NORMAL");
+end
+
+rule intruderAtTheDoor when
+    /updates[ isAlerted() ]
+then
+    result.append("INTRUDER_DETECTED");
 end
