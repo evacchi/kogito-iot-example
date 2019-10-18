@@ -1,4 +1,4 @@
-## Example "Home Automation
+## Example "Home Automation"
 
 ### House Alarm
 
