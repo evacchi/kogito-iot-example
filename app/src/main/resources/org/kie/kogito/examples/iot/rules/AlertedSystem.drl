@@ -6,11 +6,13 @@ import org.kie.kogito.examples.iot.data.DoorSensorData;
 rule alertedNoIntruder when
     /updates[ !isAlerted() ]
 then
+    System.out.println("situation back to normal (alerted)");
     result.append("SITUATION_NORMAL");
 end
 
 rule alertedIntruderAtTheDoor when
     /updates[ isAlerted() ]
 then
+    System.out.println("situation still abnormal: intruder");
     result.append("INTRUDER_DETECTED");
 end

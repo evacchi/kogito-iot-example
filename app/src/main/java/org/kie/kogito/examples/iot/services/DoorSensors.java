@@ -8,12 +8,8 @@ import org.kie.kogito.examples.iot.data.DoorSensorData;
 @ApplicationScoped
 public class DoorSensors {
     public DoorSensorData getStatus(Object o) {
-        return new DoorSensorData(
-            Math.random() > .5 ? true : false, 
-            false,
-            false, 
-            false, 
-            false
-        );
+        DoorSensorData data = new DoorSensorData();
+        data.setFrontDoor(Math.random() > .5 ? true : false);
+        return data;
     }
 }

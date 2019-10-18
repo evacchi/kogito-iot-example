@@ -6,6 +6,7 @@ import javax.enterprise.context.ApplicationScoped;
 public class Alarm {
     public boolean enabled = false;
     public Object enable(Object o) {
+        System.out.println("!! ALARM INTRUDER !! WHEOWHEOWHEOWHEO");
         this.enabled = true;
         return null;
     }
